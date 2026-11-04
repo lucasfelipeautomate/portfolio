@@ -1,0 +1,11 @@
+{
+  // Static site served by Workers static assets; the name must match the Worker in the Cloudflare dashboard.
+  "name": "lucas-severino",
+  "compatibility_date": "2026-11-03",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "."
+  }
+}
