@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página não encontrada | Lucas Severino</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0a0d0c">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement, lang = null;
+      try { lang = localStorage.getItem("lang"); } catch (e) {}
+      if (lang !== "pt" && lang !== "en") {
+        lang = (navigator.language || "pt").toLowerCase().indexOf("pt") === 0 ? "pt" : "en";
+      }
+      d.setAttribute("data-lang", lang);
+      d.lang = lang === "pt" ? "pt-BR" : "en";
+      if (lang === "en") document.title = "Page not found | Lucas Severino";
+    })();
+  </script>
+</head>
+<body>
+  <main class="notfound wrap">
+    <p class="kicker"><span class="kicker-num">404</span><span lang="pt">Fluxo não encontrado</span><span lang="en">Workflow not found</span></p>
+    <h1 class="notfound-title"><span lang="pt">Esse caminho não leva a nenhum fluxo.</span><span lang="en">This path doesn’t lead to any workflow.</span></h1>
+    <p class="notfound-text"><span lang="pt">O endereço pode ter mudado ou estar digitado errado.</span><span lang="en">The address may have changed or been mistyped.</span></p>
+    <a class="btn btn-primary" href="/"><span lang="pt">Voltar ao início</span><span lang="en">Back to the homepage</span></a>
+  </main>
+</body>
+</html>

@@ -565,6 +565,11 @@ main:focus { outline: none; }
 .copy-email.is-copied .copy-idle { display: none; }
 .copy-email.is-copied .copy-done { display: inline; color: var(--mint); }
 
+/* ============ 404 ============ */
+.notfound { min-height: 100svh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 22px; padding-top: 48px; padding-bottom: 48px; }
+.notfound-title { font: 800 clamp(40px, 7vw, 96px)/0.95 var(--display); font-stretch: 116%; letter-spacing: -0.04em; max-width: 14ch; text-wrap: balance; }
+.notfound-text { color: var(--muted); font-size: 19px; max-width: 48ch; }
+
 /* ============ Footer ============ */
 .footer { padding: 56px 0 40px; margin-top: 96px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px 24px; }
